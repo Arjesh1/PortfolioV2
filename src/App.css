@@ -30,9 +30,9 @@ html{
 
 body{
     font-weight: 400;
-    overflow: hidden;
+    overflow-x: hidden;
     position: relative;
-    color: white !important;
+    color: rgb(2, 2, 2) !important;
     font-family: 'Centra', sans-serif !important;
 }
 
@@ -84,7 +84,8 @@ p, a, li, button, ul {
   }
   /************ Navbar Css ************/
   nav.navbar {
-    background: #121212;
+    background: #ffffff;
+    border-bottom: #000000 solid 1px;
     padding: 18px 0;
     position: fixed;
     width: 100%;
@@ -94,14 +95,14 @@ p, a, li, button, ul {
   }
   nav.navbar.scrolled {
     padding: 0px 0;
-    background-color: #121212;
+    background-color: #ffffff;
   }
   nav.navbar a.navbar-brand {
       width: 9%;
   }
   nav.navbar .navbar-nav .nav-link.navbar-link {
     font-weight: 400;
-    color: #fff !important;
+    color: #000000 !important;
     letter-spacing: 0.8px;
     padding: 0 25px;
     font-size: 18px;
@@ -133,34 +134,42 @@ p, a, li, button, ul {
       text-decoration: none;
   }
 
-  .social-icon a i{
-    color: white;
+  .social-icon a:hover i{
+    color: #f7f7f7;
+
   }
+
+  .social-icon a i{
+    color: rgb(1, 1, 1);
+    z-index: 2;
+  }
+ 
   .social-icon a::before {
       content: "";
       width: 42px;
       height: 42px;
       position: absolute;
-      background-color: #ffffff10;
-      color: black;
+      background-color: #030303;
+      color: rgb(249, 249, 249);
       border-radius: 50%;
       transform: scale(0);
       transition: 0.3s ease-in-out;
+      z-index: 1
   }
   .social-icon a:hover::before {
       transform: scale(1);
       
   }
 
-  .social-icon a i:hover:{
-    color: #121212;
+  .social-icon a i:hover{
+    color: #ffffff;
   }
 
   
   .navbar-text button {
     font-weight: 700;
-    color: #fff;
-    border: 1px solid #fff;
+    color: #000000;
+    border: 1px solid #000000;
     padding: 18px 34px;
     font-size: 18px;
     margin-left: 18px;
@@ -176,14 +185,14 @@ p, a, li, button, ul {
     width: 0%;
     height: 100%;
     position: absolute;
-    background-color: #fff;
+    background-color: #040404;
     left: 0;
     top: 0;
     z-index: -1;
     transition: 0.3s ease-in-out;
   }
   .navbar-text button:hover {
-    color: #121212;
+    color: #ffffff;
   }
   .navbar-text button:hover::before {
       content: "";
@@ -213,7 +222,7 @@ p, a, li, button, ul {
       width: 24px;
       position: absolute;
       height: 2px;
-      background-color: #fff;
+      background-color: #000000;
       top: 0;
       left: 0;
       content: '';
@@ -236,3 +245,128 @@ p, a, li, button, ul {
   nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
       border-color: transparent;
   }
+
+  hr{
+    color: #000000;
+    width: 1px;
+  }
+
+  /************ Hero Css ************/
+.banner {
+  margin-top: 0;
+  padding: 260px 0 100px 0;
+  background-image: url('./assets/img/day.jpg');
+  background-position: top center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.banner .tagline {
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  padding: 8px 10px;
+  background: #b444ac;
+  background: -webkit-linear-gradient(0deg, #b444ac 0%, #20c3c2 100%);
+  background: linear-gradient(0deg, #b444ac 0%, #20c3c2 100%);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  font-size: 20px;
+  margin-bottom: 16px;
+  display: inline-block;
+}
+.banner h1 {
+  font-size: 65px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  line-height: 1;
+  margin-bottom: 20px;
+  display: block;
+}
+
+h1 .design{
+  color: red;
+}
+.banner button {
+  color: #030202;
+  font-weight: 700;
+  font-size: 20px;
+  margin-top: 60px;
+  letter-spacing: 0.8px;
+  display: flex;
+  align-items: center;
+  border: #000000 solid 1px;
+}
+.banner button svg {
+  font-size: 25px;
+  margin-left: 10px;
+  transition: 0.3s ease-in-out;
+  line-height: 1;
+}
+.banner button:hover svg {
+  margin-left: 25px;
+}
+.banner img {
+  animation: updown 3s linear infinite;
+}
+@keyframes updown {
+    0% {
+        transform: translateY(-20px);
+    }
+    50% {
+        transform: translateY(20px);
+    }
+    100% {
+        transform: translateY(-20px);
+    }
+}
+.txt-rotate > .wrap {
+  border-right: 0.08em solid #666;
+}
+
+/************ Skills ************/
+
+.skill {
+  padding: 0 0 50px 0;
+  position: relative;
+}
+.skill-bx {
+  border-radius: 64px;
+  padding: 60px 50px;
+  margin-top: -60px;
+}
+.skill h2 {
+	font-size: 45px;
+	font-weight: 700;
+  text-align: center;
+}
+.skill p {
+    color: #B8B8B8;
+    font-size: 18px;
+    letter-spacing: 0.8px;
+    line-height: 1.5em;
+    margin: 14px 0 75px 0;
+    text-align: center;
+}
+.skill-slider {
+  width: 80%;
+  margin: 0 auto;
+  position: relative;
+  
+  
+}
+
+.icon{
+  width: 80%;
+}
+
+.spacer{
+  margin-left: 8px;
+}
+
+
+
+
+
+
+
+
+
+

@@ -1,9 +1,7 @@
 import { useState, useEffect } from "react";
 import { Navbar, Nav, Container } from "react-bootstrap";
-import logo from '../assets/img/logo.png';
-import navIcon1 from '../assets/img/nav-icon1.svg';
-import navIcon2 from '../assets/img/nav-icon2.svg';
-import navIcon3 from '../assets/img/nav-icon3.svg';
+import logo from '../assets/img/logoLight.png';
+
 
 
 export const NavBar = () => {
@@ -30,8 +28,9 @@ export const NavBar = () => {
   }
 
   return (
+    < div>
     
-      <Navbar expand="md" className={scrolled ? "scrolled" : ""}>
+      <Navbar expand="md" className= {scrolled ? "scrolled" : ""}>
         <Container>
           <Navbar.Brand href="/">
             <img src={logo} alt="Logo" />
@@ -48,17 +47,23 @@ export const NavBar = () => {
             </Nav>
             <span className="navbar-text">
               <div className="social-icon">
-                <a href="#"><i class="fa-brands fa-linkedin-in li"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin-in "></i></a>
                 <a href="#"><i class="fa-brands fa-twitter"></i></a>
                 <a href="#"><i class="fa-brands fa-github"></i></a>
               </div>
               
                 <button className="vvd"><span>Let’s Connect</span></button>
               
+                <a href="#"><i class="fa-solid fa-moon"></i></a>
             </span>
+
           </Navbar.Collapse>
+         
         </Container>
+        
       </Navbar>
+       
+       </div>
     
   )
 }
