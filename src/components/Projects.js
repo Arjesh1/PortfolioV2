@@ -85,7 +85,7 @@ const Projects = () => {
               {({ isVisible }) =>
               <div className={isVisible ? "animate__animated animate__fadeIn": ""}>
                 <h2>Projects</h2>
-                <p>As a developer working on a project that utilizes HTML, CSS, JavaScript, React, and TypeScript, I'm excited about the potential to create a dynamic and modern web application. I have used React as the front-end framework and TypeScript for added type safety. Overall, I'm looking forward to learn more of these technologies to build a successful project.</p>
+                <p>As a developer working on a project that utilizes HTML, CSS, JavaScript, React, and TypeScript, I'm excited about the potential to create a dynamic and modern web application. I have used React as the front-end framework and TypeScript for added type safety. Overall, I'm looking forward to learn more of these technologies to enhance and explore more things that can be done.</p>
                 <Tab.Container id="projects-tabs" defaultActiveKey="first">
                   <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
                     <Nav.Item>

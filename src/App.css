@@ -34,6 +34,7 @@ body{
     position: relative;
     color: rgb(2, 2, 2) !important;
     font-family: 'Centra', sans-serif !important;
+    
 }
 
 h1, h2, h3, h4, h5, h6{
@@ -264,14 +265,15 @@ p, a, li, button, ul {
   font-weight: 700;
   letter-spacing: 0.8px;
   padding: 8px 10px;
-  background: #b444ac;
-  background: -webkit-linear-gradient(0deg, #b444ac 0%, #20c3c2 100%);
-  background: linear-gradient(0deg, #b444ac 0%, #20c3c2 100%);
+  background: linear-gradient(160deg, rgb(2, 28, 122) 45.26%, rgb(36, 83, 255) 84.09%);
   border: 1px solid rgba(255, 255, 255, 0.5);
+  color: #ffffff;
   font-size: 20px;
   margin-bottom: 16px;
   display: inline-block;
 }
+
+
 .banner h1 {
   font-size: 65px;
   font-weight: 700;
@@ -385,10 +387,11 @@ h1 .design{
   width: 72%;
   margin: 0 auto;
   border-radius: 50px;
-  background: rgb(10,66,75);
-background: radial-gradient(circle, rgba(10,66,75,1) 0%, rgba(148,187,233,1) 100%);
+  background: linear-gradient(245deg, rgb(0, 103, 154) 54.25%, rgb(0, 173, 239) 96.94%);
   overflow: hidden;
 }
+
+
 .project .nav.nav-pills .nav-item {
   width: 33.33333%;
 }
@@ -411,8 +414,7 @@ background: radial-gradient(circle, rgba(10,66,75,1) 0%, rgba(148,187,233,1) 100
     position: absolute;
     width: 0;
     height: 100%;
-    background: rgb(2,0,36);
-background: linear-gradient(354deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+    background: #03314f;       
     top: 0;
     left: 0;
     z-index: -1;
@@ -446,7 +448,7 @@ background: linear-gradient(354deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba
 }
 .proj-imgbx::before {
   content: "";
-  background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
+  background: linear-gradient(245deg, rgb(0, 103, 154) 54.25%, rgb(0, 173, 239) 96.94%);
   opacity: 0.85;
   position: absolute;
   width: 100%;
