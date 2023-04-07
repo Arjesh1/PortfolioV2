@@ -1,7 +1,8 @@
 import React from 'react'
 import { useEffect, useState } from 'react'
-import { Col, Container, Row } from 'react-bootstrap'
-import hero from "../assets/img/header-img.svg"
+import { Col, Container, Row, Nav } from 'react-bootstrap'
+import hero from "../assets/img/pic.png"
+import Resume from '../assets/resume/Resume.pdf'
 
 const Hero = () => {
   const [loopNum, setLoopNum] = useState(0)
@@ -45,15 +46,22 @@ const tick = () =>{
     <section className='banner' id='home'>
       <Container>
         <Row className='align-items-center'>
+          
+          <Col xs={12} md={6} xl={5}>
+            <img src={hero} alt="Hero Sec"/>
+          </Col>
+
           <Col xs={12} md={6} xl={7}>
             <span className='tagline'>Welcome to My portfolio</span>
             <h1>Hi I'm Arjesh Khadka</h1>
-            <h1>{'<>['}<span className='design'>{text}</span>{']</>'}</h1>
+            <h1>{'<>'}<span className='design'>{text}</span>{'</>'}</h1>
 
-            <button onClick={()=>console.log("connect")}>Let's Connect</button>
-          </Col>
-          <Col xs={12} md={6} xl={5}>
-            <img src={hero} alt="Hero Sec"/>
+            <div className='d-flex justify-content-evenly gap-5 btn'>
+
+            <Nav.Link href="#contact"><button className="vvd"><span>Let’s Connect</span></button></Nav.Link>
+            <Nav.Link href={Resume}><button className="vvd"><span>Download Resume</span></button></Nav.Link>
+
+            </div>
           </Col>
 
         </Row>

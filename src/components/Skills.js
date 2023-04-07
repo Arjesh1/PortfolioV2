@@ -1,6 +1,5 @@
 import React from 'react'
 import { Container, Row, Col } from 'react-bootstrap';
-import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import  {ReactComponent as Figma} from "../assets/img/figma.svg"
 import  {ReactComponent as Html} from "../assets/img/html5.svg"
@@ -12,7 +11,8 @@ import  {ReactComponent as Php} from "../assets/img/php.svg"
 import  {ReactComponent as Mysql} from "../assets/img/mysql.svg"
 import  {ReactComponent as Git} from "../assets/img/git.svg"
 import  {ReactComponent as Github} from "../assets/img/github.svg"
-
+import  {ReactComponent as Redux} from "../assets/img/redux.svg"
+import  {ReactComponent as Firebase} from "../assets/img/firebase.svg"
 import Marquee from "react-fast-marquee";
 
 
@@ -57,17 +57,19 @@ const Skills = () => {
                         <div className='icon d-flex justify-content-center'>
 
 
-                               <Marquee style={{}}pauseOnHover={true}>
+                               <Marquee style={{}}pauseOnHover={true} gradient={false}>
                                  <Figma  className='spacer'/>
                                  <Html  className='spacer'/>
                                  <Css className='spacer'/>
                                  <Js className='spacer'/>
                                  <Ts className='spacer'/>
                                  <React1 className='spacer'/>
+                                 <Redux className='spacer'/>
                                  <Php className='spacer'/>
                                  <Mysql className='spacer'/>
                                  <Git className='spacer'/>
                                  <Github className='spacer'/>
+                                 <Firebase className='spacer'/>
                                  
     
                               </Marquee>

@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Navbar, Nav, Container } from "react-bootstrap";
-import logo from '../assets/img/logoLight.png';
+
 
 
 
@@ -33,7 +33,7 @@ export const NavBar = () => {
       <Navbar expand="md" className= {scrolled ? "scrolled" : ""}>
         <Container>
           <Navbar.Brand href="/">
-            <img src={logo} alt="Logo" />
+            <div className="logo"></div>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav">
             <span className="navbar-toggler-icon"></span>
@@ -42,19 +42,25 @@ export const NavBar = () => {
             <Nav className="ms-auto">
               <Nav.Link href="#home" className={activeLink === 'home' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('home')}>Home</Nav.Link>
               <Nav.Link href="#skills" className={activeLink === 'skills' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('skills')}>Skills</Nav.Link>
-              <Nav.Link href="#projects" className={activeLink === 'projects' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('projects')}>Projects</Nav.Link>
+              <Nav.Link href="#project" className={activeLink === 'projects' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('projects')}>Projects</Nav.Link>
               <Nav.Link href="#about" className={activeLink === 'about' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('about')}>About Me</Nav.Link>
             </Nav>
             <span className="navbar-text">
               <div className="social-icon">
-                <a href="#"><i class="fa-brands fa-linkedin-in "></i></a>
-                <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                <a href="#"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/arjesh-khadka/"><i class="fa-brands fa-linkedin-in "></i></a>
+                <a href="https://twitter.com/ArjeshKhadka"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://github.com/Arjesh1"><i class="fa-brands fa-github"></i></a>
               </div>
+
+              <Nav className="ms-auto">
+              <Nav.Link href="#contact" className={activeLink === 'contact' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('contact')}><button className="vvd"><span>Let’s Connect</span></button></Nav.Link>
+
+            </Nav>
+           
               
-                <button className="vvd"><span>Let’s Connect</span></button>
+                
               
-                <a href="#"><i class="fa-solid fa-moon"></i></a>
+               
             </span>
 
           </Navbar.Collapse>
