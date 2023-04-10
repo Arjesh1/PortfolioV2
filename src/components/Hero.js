@@ -2,7 +2,7 @@ import React from 'react'
 import { useEffect, useState } from 'react'
 import { Col, Container, Row, Nav } from 'react-bootstrap'
 import hero from "../assets/img/pic.png"
-import Resume from '../assets/resume/Resume.pdf'
+import Resume from '../assets/resume/resume.pdf'
 
 const Hero = () => {
   const [loopNum, setLoopNum] = useState(0)
