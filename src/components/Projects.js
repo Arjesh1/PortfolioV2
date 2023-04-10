@@ -10,6 +10,9 @@ import weather from "../assets/img/js/quote-generator.png";
 import quote from "../assets/img/js/weather-app.png";
 import sydneyHealth from "../assets/img/php-ts/sydneyhealth.jpeg";
 import travel from "../assets/img/php-ts/travel.jpeg";
+import finance from "../assets/img/react/finance management.png";
+import not from "../assets/img/react/not.png";
+import prank from "../assets/img/react/prankCalculator.png";
 
 
 
@@ -48,14 +51,14 @@ const Projects = () => {
           live: "https://arjesh1.github.io/quiz-app/"
         },
         {
-          title: "Weather",
+          title: "Quote Generator",
           description: "HTML, CSS, JS",
           imgUrl: weather,
           git: "https://github.com/Arjesh1/weather-app",
           live: "https://arjesh1.github.io/weather-app/"
         },
         {
-          title: "Quote Generator",
+          title: "Weather",
           description: "HTML, CSS, JS",
           imgUrl: quote,
           git: "https://github.com/Arjesh1/Quote-generator",
@@ -65,12 +68,29 @@ const Projects = () => {
 
 
       const project2 = [
+        
+        {
+          title: "Finance Tracker",
+          description: "HTML, CSS, Bootstrap, React, Redux, Firebase ",
+          imgUrl: finance,
+          git: "https://github.com/Arjesh1/Financial-Management-React-Redux-",
+          live: "https://financial-management-react-redux.vercel.app/"
+        },
+
         {
           title: "Not To Do List",
-          description: "HTML, CSS, Bootstrap, JS",
-          imgUrl: notToDo,
-          git: "https://github.com/Arjesh1/Not-To-Do-List",
-          live: "https://arjesh1.github.io/Not-To-Do-List/"
+          description: "HTML, CSS, Bootstrap, React",
+          imgUrl: not,
+          git: "https://github.com/Arjesh1/not-to-do-list-react",
+          live: "https://not-to-do-list-react-eta.vercel.app/"
+        },
+
+        {
+          title: "Prank Calculator",
+          description: "HTML, CSS, Bootstrap, React ",
+          imgUrl: prank,
+          git: "https://github.com/Arjesh1/React-Prank-Calculator-",
+          live: "https://react-prank-calculator-eight.vercel.app/"
         },
         
       ];
@@ -90,13 +110,7 @@ const Projects = () => {
           git: "https://github.com/Arjesh1/Travels",
           live: "https://github.com/Arjesh1/Travels"
         },
-        {
-          title: "Sydney Health Solutions",
-          description: "HTML, CSS, JS, PHP, MySQL",
-          imgUrl: notToDo,
-          git: "https://github.com/Arjesh1/sydneyhealthsolutions",
-          live: "https://github.com/Arjesh1/sydneyhealthsolutions"
-        },
+      
         
         
       ];
@@ -114,13 +128,13 @@ const Projects = () => {
                 <Tab.Container id="projects-tabs" defaultActiveKey="first">
                   <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
                     <Nav.Item>
-                      <Nav.Link eventKey="first">HTML/CSS/JS</Nav.Link>
+                      <Nav.Link eventKey="first">JS/CSS/HTML</Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
                       <Nav.Link eventKey="second">React</Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
-                      <Nav.Link eventKey="third">PHP/TS</Nav.Link>
+                      <Nav.Link eventKey="third">PHP</Nav.Link>
                     </Nav.Item>
                   </Nav>
                   <Tab.Content id="slideInUp" className={isVisible ? "animate__animated animate__slideInUp" : ""}>

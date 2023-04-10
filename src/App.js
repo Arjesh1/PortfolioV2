@@ -8,7 +8,7 @@ import About from './components/About';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import MobileNav from './components/MobileNav';
-import { Nav } from 'react-bootstrap';
+
 
 
 function App() {
@@ -20,7 +20,7 @@ function App() {
     <input type="checkbox"className='dark-mode-checkbox'  id="check"/>
 
 
-    <div className='mobileNav'>
+    {/* <div className='mobileNav'>
 
     <div className=" mobilenav-icon">
                 <a href="#home"><i class="fa-solid fa-house"></i></a>
@@ -32,7 +32,7 @@ function App() {
 
               </div>
 
-              </div>
+              </div> */}
 
 
       
