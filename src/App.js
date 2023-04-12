@@ -7,17 +7,26 @@ import Projects from './components/Projects';
 import About from './components/About';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import { useState } from 'react';
 
 
 
 
 function App() {
+  const [theme, setTheme] = useState(false)
+
+  const handleChange = (e) => {
+    const {checked} = e.target
+
+    setTheme(checked)
+  }
   return (
 <>
 <label for="darkMode" className='menu-mode'>
-<i class="fa-solid fa-toggle-on "></i>
+{theme ? <i class="fa-solid fa-sun" style={{color: "#e7f524",}}></i> : <i class="fa-solid fa-moon" style={{color: "#000000",}}></i>}
+{/* <i class="fa-solid fa-toggle-on "></i> */}
   </label>
-    <input type="checkbox"className='dark-mode-checkbox'  id="check"/>
+    <input type="checkbox"className='dark-mode-checkbox' id="check" onChange={handleChange}/>
 
 
     {/* <div className='mobileNav'>

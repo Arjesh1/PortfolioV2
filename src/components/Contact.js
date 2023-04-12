@@ -30,13 +30,14 @@ const Contact = () => {
   return (
     <section id='contact' className='contact'>
       <Container>
+      <h2 className='text-center mb-5'>Get In Touch</h2>
         <Row>
           <Col md={6}>
             <img src={contact} alt="contact"/>
           </Col>
 
           <Col md={6}>
-            <h2>Get In Touch</h2>
+            
             <form ref={form} onSubmit={sendEmail}>
               <Row>
                 <Col sm={6} className='px-1'>

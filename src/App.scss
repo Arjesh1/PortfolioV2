@@ -123,7 +123,7 @@ p, a, li, button, ul {
   .wrapper{
     background: var(--bg-light);
     color: var(--text-light);
-   
+   overflow-x: hidden !important;
 
 
   }
@@ -184,14 +184,82 @@ p, a, li, button, ul {
 
   }
 
-  @include mobile(){
+  @include extraLargeScreen(){
+
+    .dark-mode-checkbox{
+    
+      height: 2rem;
+      width: 2rem;
+      left: 97%;
+      top: 95%;
+    
+      
+    }
+  
+    
+      label {
+        height: 2rem;
+        width: 2rem;
+        left: 97%;
+        top: 95%;
+        
+    }
+  }
+
+
+  
+  @include desktop(){
+
+    .dark-mode-checkbox{
+    
+      height: 2rem;
+      width: 2rem;
+      left: 96%;
+      top: 94%;
+    
+      
+    }
+  
+    
+      label {
+        height: 2rem;
+        width: 2rem;
+        left: 96%;
+        top: 94%;
+        
+    }
+  }
+  
+  @include laptop(){
+
+    .dark-mode-checkbox{
+    
+      height: 2rem;
+      width: 2rem;
+      left: 95%;
+      top: 93%;
+    
+      
+    }
+  
+    
+      label {
+        height: 2rem;
+        width: 2rem;
+        left: 95%;
+        top: 93%;
+        
+    }
+  }
+
+  @include tablet(){
 
     .dark-mode-checkbox{
     
       height: 2rem;
       width: 2rem;
       left: 92%;
-      top: 15%;
+      top: 91%;
     
       
     }
@@ -201,23 +269,19 @@ p, a, li, button, ul {
         height: 2rem;
         width: 2rem;
         left: 92%;
-        top: 15%;
+        top: 91%;
         
     }
-  
-
-    
-  
   }
-  
-  @include tablet(){
+
+  @include mobile(){
 
     .dark-mode-checkbox{
     
       height: 2rem;
       width: 2rem;
-      left: 88%;
-      top: 11%;
+      left: 90%;
+      top: 91%;
     
       
     }
@@ -226,39 +290,10 @@ p, a, li, button, ul {
       label {
         height: 2rem;
         width: 2rem;
-        left: 88%;
-        top: 11%;
+        left: 90%;
+        top: 91%;
         
     }
-  
-  
-    
-  
-  }
-  
-  @include laptop(){
-
-    .dark-mode-checkbox{
-    
-      height: 2rem;
-      width: 2rem;
-      left: 75%;
-      top: 14.3%;
-    
-      
-    }
-  
-    
-      label {
-        height: 2rem;
-        width: 2rem;
-        left: 75%;
-        top: 14.3%;
-        
-    }
-  
-    
-  
   }
 
 
@@ -456,7 +491,6 @@ p, a, li, button, ul {
   }
 
   @include mobile(){
-
     .tagline{
       text-align: center;
     }
@@ -495,9 +529,29 @@ p, a, li, button, ul {
   display: block;
 }
 
-h1 .design{
+h1 {
+  @include mobile(){
+    // font-size: 2.5rem !important;
+  }
+  .design{
   color:#1a6da4;
+  
+  @include mobile(){
+    font-size: 3rem !important;
+  }
+ 
 }
+}
+
+.cod{
+  @include mobile(){
+    font-size: 2.5rem !important;
+  }
+
+}
+
+
+
 
 .btn button {
   font-weight: 700;

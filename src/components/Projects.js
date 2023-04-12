@@ -6,8 +6,9 @@ import notToDo from "../assets/img/js/not-to-do-list.png";
 import contact from "../assets/img/js/contactList.png";
 import calcu from "../assets/img/js/calculator.png";
 import quiz from "../assets/img/js/quiz-app.png";
-import weather from "../assets/img/js/quote-generator.png";
-import quote from "../assets/img/js/weather-app.png";
+import quote from "../assets/img/js/quote-generator.png";
+import currency from "../assets/img/js/converter.png";
+import weather from "../assets/img/js/weather-app.png";
 import sydneyHealth from "../assets/img/php-ts/sydneyhealth.jpeg";
 import travel from "../assets/img/php-ts/travel.jpeg";
 import finance from "../assets/img/react/finance management.png";
@@ -53,16 +54,24 @@ const Projects = () => {
         {
           title: "Quote Generator",
           description: "HTML, CSS, JS",
-          imgUrl: weather,
-          git: "https://github.com/Arjesh1/weather-app",
-          live: "https://arjesh1.github.io/weather-app/"
+          imgUrl: quote ,
+          git: "https://github.com/Arjesh1/Quote-generator ",
+          live: "https://arjesh1.github.io/Quote-generator/ "
         },
         {
           title: "Weather",
           description: "HTML, CSS, JS",
-          imgUrl: quote,
-          git: "https://github.com/Arjesh1/Quote-generator",
-          live: "https://arjesh1.github.io/Quote-generator/"
+          imgUrl: weather,
+          git: "https://github.com/Arjesh1/weather-app",
+          live: "https://arjesh1.github.io/weather-app/"
+        },
+
+        {
+          title: "Currency Converter",
+          description: "HTML, CSS, JS",
+          imgUrl: currency,
+          git: "https://github.com/Arjesh1/Currency-Converter",
+          live: "https://arjesh1.github.io/Currency-Converter/"
         },
       ];
 

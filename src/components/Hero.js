@@ -54,9 +54,9 @@ const tick = () =>{
           <Col xs={12} md={6} xl={7}>
             <span className='tagline'>Welcome to My portfolio</span>
             <h1>Hi I'm Arjesh Khadka</h1>
-            <h1>{'<>'}<span className='design'>{text}</span>{'</>'}</h1>
+            <h1 className='cod'>{'<>'}<span className='design'>{text}</span>{'</>'}</h1>
 
-            <div className='d-flex justify-content-evenly gap-5 btn'>
+            <div className='d-flex justify-content-evenly gap-3 btn'>
 
             <Nav.Link href="#contact"><button className="vvd"><span>Let’s Connect</span></button></Nav.Link>
             <Nav.Link href={Resume}><button className="vvd"><span>Download Resume</span></button></Nav.Link>
