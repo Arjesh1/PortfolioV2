@@ -83,12 +83,14 @@ const Contact = () => {
 <div className="email-section">
 <h3>OR</h3>
    <p className=''>Reach out over email</p>
-   <div className="email d-flex align-items-center justify-content-center">
-       <a href="mailto:arjesh.khadka2@gmail.com">arjesh.khadka2@gmail.com</a>
-
+   <div className="email ">
+       <a href="mailto:arjesh.khadka2@gmail.com" className='d-flex align-items-center justify-content-center'>arjesh.khadka2@gmail.com
        <div className="send">
            <i className="fa-sharp fa-solid fa-paper-plane"></i>
        </div>
+       </a>
+
+       
    </div>
 </div>
 
