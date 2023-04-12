@@ -22,8 +22,9 @@ function App() {
   }
   return (
 <>
+
 <label for="darkMode" className='menu-mode'>
-{theme ? <i class="fa-solid fa-sun" style={{color: "#e7f524",}}></i> : <i class="fa-solid fa-moon" style={{color: "#000000",}}></i>}
+{theme ? <i class="fa-regular fa-sun fa-spin" style={{color: "#FCE570",}}></i> : <i class="fa-regular fa-moon fa-fade" style={{color: "#000000",}}></i>}
 {/* <i class="fa-solid fa-toggle-on "></i> */}
   </label>
     <input type="checkbox"className='dark-mode-checkbox' id="check" onChange={handleChange}/>
