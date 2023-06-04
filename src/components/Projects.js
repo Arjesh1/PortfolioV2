@@ -1,7 +1,6 @@
 import React from 'react'
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
-
 import notToDo from "../assets/img/js/not-to-do-list.png";
 import contact from "../assets/img/js/contactList.png";
 import calcu from "../assets/img/js/calculator.png";
@@ -14,6 +13,7 @@ import travel from "../assets/img/php-ts/travel.jpeg";
 import finance from "../assets/img/react/finance management.png";
 import not from "../assets/img/react/not.png";
 import prank from "../assets/img/react/prankCalculator.png";
+import libra from "../assets/img/react/libraEase.png";
 
 
 
@@ -79,6 +79,13 @@ const Projects = () => {
       const project2 = [
         
         {
+          title: "Libra Ease",
+          description: "HTML, CSS, Bootstrap, React, Redux, Firebase, React-Bootstrap ",
+          imgUrl: libra,
+          git: "https://github.com/Arjesh1/LibraEase---Library-Management-System",
+          live: "https://libra-ease-library-management-system-arjesh1.vercel.app/"
+        },
+        {
           title: "Finance Tracker",
           description: "HTML, CSS, Bootstrap, React, Redux, Firebase ",
           imgUrl: finance,
@@ -136,10 +143,10 @@ const Projects = () => {
                 <Tab.Container id="projects-tabs" defaultActiveKey="first">
                   <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
                     <Nav.Item>
-                      <Nav.Link eventKey="first">JS/CSS/HTML</Nav.Link>
+                      <Nav.Link eventKey="first">React</Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
-                      <Nav.Link eventKey="second">React</Nav.Link>
+                      <Nav.Link eventKey="second">JS/CSS/HTML</Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
                       <Nav.Link eventKey="third">PHP</Nav.Link>
@@ -147,20 +154,7 @@ const Projects = () => {
                   </Nav>
                   <Tab.Content id="slideInUp" className={isVisible ? "animate__animated animate__slideInUp" : ""}>
                     <Tab.Pane eventKey="first">
-                      <Row>
-                        {
-                          projects.map((project, index) => {
-                            return (
-                              <ProjectCard
-                                key={index}
-                                {...project}
-                                />
-                            )
-                          })
-                        }
-                      </Row>
-                    </Tab.Pane>
-                    <Tab.Pane eventKey="second">
+                      
                     <Row>
                         {
                           project2.map((project2, index) => {
@@ -168,6 +162,21 @@ const Projects = () => {
                               <ProjectCard
                                 key={index}
                                 {...project2}
+                                />
+                            )
+                          })
+                        }
+                      </Row>
+                     
+                    </Tab.Pane>
+                    <Tab.Pane eventKey="second">
+                    <Row>
+                        {
+                          projects.map((project, index) => {
+                            return (
+                              <ProjectCard
+                                key={index}
+                                {...project}
                                 />
                             )
                           })
