@@ -41,23 +41,23 @@ const Contact = () => {
             <form ref={form} onSubmit={sendEmail}>
               <Row>
                 <Col sm={6} className='px-1'>
-                  <input type='text'  placeholder='First Name' name='user_fname'  />
+                  <input type='text'  placeholder='First Name' name='user_fname' required={true} />
                 </Col>
 
                 <Col sm={6} className='px-1'>
-                  <input type='text' placeholder='Last Name' name='user_lname' />
+                  <input type='text' placeholder='Last Name' name='user_lname' required={true}/>
                 </Col>
 
                 <Col sm={6} className='px-1'>
-                  <input type='email'  placeholder='Email' name='user_email' />
+                  <input type='email'  placeholder='Email' name='user_email' required={true}/>
                 </Col>
 
                 <Col sm={6}  className='px-1'>
-                  <input type='tel'  placeholder='Phone No' name='user_phone' />
+                  <input type='tel'  placeholder='Phone No' name='user_phone' required={true} />
                 </Col>
 
                 <Col sm={6}  className='px-1'>
-                  <textarea row='6'  placeholder="Message" name='message' />
+                  <textarea row='6'  placeholder="Message" name='message' required={true}/>
                   <button type='submit' value='Send'><span>Send</span></button>
                 </Col>
 
