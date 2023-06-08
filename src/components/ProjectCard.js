@@ -14,13 +14,13 @@ export const ProjectCard = ({ title, description, imgUrl, git, live }) => {
         <div className="proj-btn ">
           
           <div className="proj-med">
-        <Nav.Link href={git}><button className="vvd"><span>Github</span></button></Nav.Link>
+        <Nav.Link href={git} target="_blank" ><button className="vvd" ><span>Github</span></button></Nav.Link>
         </div>
         
 
         
         <div>
-        <Nav.Link href={live}><button className="vvd"><span>Live</span></button></Nav.Link>
+        <Nav.Link href={live} target="_blank"><button className="vvd" ><span>Live</span></button></Nav.Link>
         </div>
         
         </div>

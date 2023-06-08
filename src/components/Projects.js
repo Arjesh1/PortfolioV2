@@ -10,7 +10,7 @@ import currency from "../assets/img/js/converter.png";
 import weather from "../assets/img/js/weather-app.png";
 import sydneyHealth from "../assets/img/php-ts/sydneyhealth.jpeg";
 import travel from "../assets/img/php-ts/travel.jpeg";
-import finance from "../assets/img/react/finance management.png";
+import finance from "../assets/img/react/people finance.png";
 import not from "../assets/img/react/not.png";
 import prank from "../assets/img/react/prankCalculator.png";
 import libra from "../assets/img/react/libraEase.png";
@@ -75,6 +75,85 @@ const Projects = () => {
         },
       ];
 
+      const project1 = [
+        
+        {
+          title: "Libra Ease",
+          description: "HTML, CSS, Bootstrap, React, Redux, Firebase, React-Bootstrap ",
+          imgUrl: libra,
+          git: "https://github.com/Arjesh1/LibraEase---Library-Management-System",
+          live: "https://libra-ease-library-management-system-arjesh1.vercel.app/"
+        },
+        {
+          title: "People Finance",
+          description: "HTML, CSS, Bootstrap, React, Redux, Firebase ",
+          imgUrl: finance,
+          git: "https://github.com/Arjesh1/Financial-Management-React-Redux-",
+          live: "https://financial-management-react-redux.vercel.app/"
+        },
+
+        {
+          title: "Sydney Health Solutions",
+          description: "HTML, CSS, JS, PHP, MySQL",
+          imgUrl: sydneyHealth,
+          git: "https://github.com/Arjesh1/sydneyhealthsolutions",
+          live: "https://github.com/Arjesh1/sydneyhealthsolutions"
+        },
+        {
+          title: "Travels",
+          description: "HTML, CSS, JS, PHP, MySQL",
+          imgUrl: travel,
+          git: "https://github.com/Arjesh1/Travels",
+          live: "https://github.com/Arjesh1/Travels"
+        },
+
+        {
+          title: "Not To Do List",
+          description: "HTML, CSS, Bootstrap, React",
+          imgUrl: not,
+          git: "https://github.com/Arjesh1/not-to-do-list-react",
+          live: "https://not-to-do-list-react-eta.vercel.app/"
+        },
+
+        {
+          title: "Calculator",
+          description: "HTML, CSS, JS",
+          imgUrl: calcu,
+          git: "https://github.com/Arjesh1/calculator",
+          live: "https://arjesh1.github.io/calculator/"
+        },
+        {
+          title: "Quiz",
+          description: "HTML, CSS, JS",
+          imgUrl: quiz,
+          git: "https://github.com/Arjesh1/quiz-app",
+          live: "https://arjesh1.github.io/quiz-app/"
+        },
+        {
+          title: "Quote Generator",
+          description: "HTML, CSS, JS",
+          imgUrl: quote ,
+          git: "https://github.com/Arjesh1/Quote-generator ",
+          live: "https://arjesh1.github.io/Quote-generator/ "
+        },
+        {
+          title: "Weather",
+          description: "HTML, CSS, JS",
+          imgUrl: weather,
+          git: "https://github.com/Arjesh1/weather-app",
+          live: "https://arjesh1.github.io/weather-app/"
+        },
+
+        {
+          title: "Currency Converter",
+          description: "HTML, CSS, JS",
+          imgUrl: currency,
+          git: "https://github.com/Arjesh1/Currency-Converter",
+          live: "https://arjesh1.github.io/Currency-Converter/"
+        },
+        
+      ];
+
 
       const project2 = [
         
@@ -86,7 +165,7 @@ const Projects = () => {
           live: "https://libra-ease-library-management-system-arjesh1.vercel.app/"
         },
         {
-          title: "Finance Tracker",
+          title: "People Finance ",
           description: "HTML, CSS, Bootstrap, React, Redux, Firebase ",
           imgUrl: finance,
           git: "https://github.com/Arjesh1/Financial-Management-React-Redux-",
@@ -140,14 +219,18 @@ const Projects = () => {
               {({ isVisible }) =>
               <div className={isVisible ? "animate__animated animate__fadeIn": ""}>
                 <h2>Projects</h2>
-                <Tab.Container id="projects-tabs" defaultActiveKey="first">
+                <Tab.Container id="projects-tabs" defaultActiveKey="fourth">
                   <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
+                  <Nav.Item>
+                      <Nav.Link eventKey="fourth">Recents</Nav.Link>
+                    </Nav.Item>
                     <Nav.Item>
                       <Nav.Link eventKey="first">React</Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
-                      <Nav.Link eventKey="second">JS/CSS/HTML</Nav.Link>
+                      <Nav.Link eventKey="second">JS</Nav.Link>
                     </Nav.Item>
+                    
                     <Nav.Item>
                       <Nav.Link eventKey="third">PHP</Nav.Link>
                     </Nav.Item>
@@ -187,6 +270,21 @@ const Projects = () => {
                     <Row>
                         {
                           project3.map((project3, index) => {
+                            return (
+                              <ProjectCard
+                                key={index}
+                                {...project3}
+                                />
+                            )
+                          })
+                        }
+                      </Row>
+                    </Tab.Pane>
+
+                    <Tab.Pane eventKey="fourth">
+                    <Row>
+                        {
+                          project1.map((project3, index) => {
                             return (
                               <ProjectCard
                                 key={index}

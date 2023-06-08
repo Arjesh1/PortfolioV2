@@ -44,10 +44,10 @@ const About = () => {
                 </article>
               </div>
 
-              <p>I am Arjesh Khadka, a highly motivated individual with a deep passion for web development. Originally from Kathmandu, Nepal, I completed my Bachelor's degree in Information Technology at Sydney, Australia.
+              <p>I am Arjesh Khadka, a highly motivated individual with a deep passion for web development.  I completed my Bachelor's degree in Information Technology at Sydney, Australia.
               </p>
 
-              <p>My interest in web development began early on in my academic career, and I excelled in my coursework and gained valuable hands-on experience. Since then, I have continued to explore new technologies and languages, always striving to stay up-to-date with the latest trends and best practices in the industry. I firmly believe that a solid foundation in IT and a dedication to learning are key to making a significant impact in the field of web development. Whether working on personal projects or professional assignments, I am always eager to take on new challenges and find creative solutions.
+              <p>My interest in web development began early on in my academic career, and I excelled in my coursework and gained valuable hands-on experience. Since then, I have continued to explore new technologies and languages, always striving to stay up-to-date with the latest trends and best practices in the industry. I firmly believe that a solid foundation in IT and a dedication to learning are key to making a significant impact in the field of web development. 
               </p>
 
               <Nav.Link href="#contact"><button className="vvd"><span>Let’s Connect</span></button></Nav.Link>

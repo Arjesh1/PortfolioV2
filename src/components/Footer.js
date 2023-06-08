@@ -24,9 +24,9 @@ const Footer = () => {
                         
                         <span className="navbar-text">
               <div className="social-icon">
-                <a href="https://www.linkedin.com/in/arjesh-khadka/"><i class="fa-brands fa-linkedin-in "></i></a>
-                <a href="https://twitter.com/ArjeshKhadka"><i class="fa-brands fa-twitter"></i></a>
-                <a href="https://github.com/Arjesh1"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/arjesh-khadka/" target="_blank"><i class="fa-brands fa-linkedin-in "></i></a>
+                <a href="https://twitter.com/ArjeshKhadka" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://github.com/Arjesh1" target="_blank"><i class="fa-brands fa-github"></i></a>
               </div>
 
                
