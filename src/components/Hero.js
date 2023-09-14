@@ -74,7 +74,7 @@ const Hero = () => {
                   <span>Let’s Connect</span>
                 </button>
               </Nav.Link>
-              <Nav.Link href={Resume}>
+              <Nav.Link href={Resume} target="_blank">
                 <button className="vvd">
                   <span>Download Resume</span>
                 </button>
