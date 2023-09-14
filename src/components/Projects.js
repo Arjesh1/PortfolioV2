@@ -100,14 +100,6 @@ const Projects = () => {
       live: "https://libra-ease-library-management-system-arjesh1.vercel.app/",
     },
     {
-      title: "Libra Ease",
-      description:
-        "HTML, CSS, Bootstrap, React, Redux, Firebase, React-Bootstrap ",
-      imgUrl: libra,
-      git: "https://github.com/Arjesh1/LibraEase---Library-Management-System",
-      live: "https://libra-ease-library-management-system-arjesh1.vercel.app/",
-    },
-    {
       title: "People Finance",
       description: "HTML, CSS, Bootstrap, React, Redux, Firebase ",
       imgUrl: finance,
@@ -239,7 +231,7 @@ const Projects = () => {
                       id="pills-tab"
                     >
                       <Nav.Item>
-                        <Nav.Link eventKey="fourth">Recents</Nav.Link>
+                        <Nav.Link eventKey="fourth">Recent</Nav.Link>
                       </Nav.Item>
                       <Nav.Item>
                         <Nav.Link eventKey="first">React</Nav.Link>
