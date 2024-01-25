@@ -78,7 +78,7 @@ const Projects = () => {
     {
       title: "Shoe Trek",
       description:
-        " JavaScript, TypeScript, React, Redux, Firebase, Express.js, Node.js Tailwind, Stripe, Git ",
+        " JavaScript, TypeScript, React, Redux, GCP, Express.js, Node.js Tailwind, Stripe, Git ",
       imgUrl: shoeTrek,
       git: "https://github.com/Arjesh1/ShoeTrek",
       live: "https://shoe-trek.vercel.app/",
@@ -86,7 +86,7 @@ const Projects = () => {
     {
       title: "Shoe Trek CMS",
       description:
-        " JavaScript, HTML, CSS, Bootstrap, React, Redux, Firebase, Charts, React-Bootstrap ",
+        " JavaScript, HTML, CSS, Bootstrap, React, Redux, GCP, Charts, React-Bootstrap ",
       imgUrl: shoeCms,
       git: "https://github.com/Arjesh1/shoe-store-cms",
       live: "https://shoe-store-cms.vercel.app/dashboard",
@@ -94,14 +94,14 @@ const Projects = () => {
     {
       title: "Libra Ease",
       description:
-        "HTML, CSS, Bootstrap, React, Redux, Firebase, React-Bootstrap ",
+        "HTML, CSS, Bootstrap, React, Redux, GCP, React-Bootstrap ",
       imgUrl: libra,
       git: "https://github.com/Arjesh1/LibraEase---Library-Management-System",
       live: "https://libra-ease-library-management-system-arjesh1.vercel.app/",
     },
     {
       title: "People Finance",
-      description: "HTML, CSS, Bootstrap, React, Redux, Firebase ",
+      description: "HTML, CSS, Bootstrap, React, Redux, GCP ",
       imgUrl: finance,
       git: "https://github.com/Arjesh1/Financial-Management-React-Redux-",
       live: "https://financial-management-react-redux.vercel.app/",
@@ -162,16 +162,32 @@ const Projects = () => {
 
   const project2 = [
     {
+      title: "Shoe Trek",
+      description:
+        " JavaScript, TypeScript, React, Redux, GCP, Express.js, Node.js Tailwind, Stripe, Git ",
+      imgUrl: shoeTrek,
+      git: "https://github.com/Arjesh1/ShoeTrek",
+      live: "https://shoe-trek.vercel.app/",
+    },
+    {
+      title: "Shoe Trek CMS",
+      description:
+        " JavaScript, HTML, CSS, Bootstrap, React, Redux, GCP, Charts, React-Bootstrap ",
+      imgUrl: shoeCms,
+      git: "https://github.com/Arjesh1/shoe-store-cms",
+      live: "https://shoe-store-cms.vercel.app/dashboard",
+    },
+    {
       title: "Libra Ease",
       description:
-        "HTML, CSS, Bootstrap, React, Redux, Firebase, React-Bootstrap ",
+        "HTML, CSS, Bootstrap, React, Redux, GCP, React-Bootstrap ",
       imgUrl: libra,
       git: "https://github.com/Arjesh1/LibraEase---Library-Management-System",
       live: "https://libra-ease-library-management-system-arjesh1.vercel.app/",
     },
     {
       title: "People Finance ",
-      description: "HTML, CSS, Bootstrap, React, Redux, Firebase ",
+      description: "HTML, CSS, Bootstrap, React, Redux, GCP ",
       imgUrl: finance,
       git: "https://github.com/Arjesh1/Financial-Management-React-Redux-",
       live: "https://financial-management-react-redux.vercel.app/",
