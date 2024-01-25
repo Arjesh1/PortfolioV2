@@ -67,7 +67,7 @@ const Hero = () => {
               {"</>"}
             </h1>
 
-            <div className="d-flex justify-content-evenly gap-3 btn">
+            <div className="d-flex  gap-3 btn">
               <Nav.Link href="#contact">
                 <button className="vvd">
                   <span>Let’s Connect</span>
